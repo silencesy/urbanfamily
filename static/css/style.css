@@ -1,0 +1,1558 @@
+/*2018-11-19 @author小鞋带*/ 
+
+/*公共部分样式*/
+* {
+    margin: 0;
+    padding: 0;
+}
+i, em, b {
+    font-style: normal;
+}
+
+/*各浏览器显示不同，去掉边框等默认样式*/
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+ul, ol, li {
+    list-style: none;
+}
+
+/*防止拖动 影响布局*/
+textarea {
+    resize: none;
+}
+
+/*去掉行内替换元素空白缝隙*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+/*引用过了bootstrap的字体*/
+body {
+    font-family: "Arial";
+    color: #222;
+    font-size: 16px;
+    background: #F5F5F5;
+}
+
+/*清除浮动*/
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+/*a标签样式*/
+a {
+    color: #222;
+    text-decoration: none;
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    color: #222;
+    text-decoration: none;
+}
+a:active {
+    color: #222;
+    text-decoration: none;
+}
+ a:focus {
+    color: #222;
+    outline:none;
+}
+/*重置bootstrap*/ 
+.container {
+    padding: 0;
+}
+.row, p, ul {
+    margin: 0;
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+	outline: none;
+    border-color: transparent;
+}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    padding: 0;
+    margin: 0;
+}
+.h1, .h2, .h3, h1, h2, h3 {
+    margin: 0;
+}
+.pagination>.active>a, 
+.pagination>.active>a:focus, 
+.pagination>.active>a:hover, 
+.pagination>.active>span, 
+.pagination>.active>span:focus, 
+.pagination>.active>span:hover {
+    background-color: #e1e1e1;
+    border-color: #e1e1e1;
+}
+.pagination>li>a,
+.pagination>li>span {
+    color: #666;
+}
+
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto; 
+}
+.topAd {
+    margin: 16px 50px;
+}
+.topAd img {
+    width: 100%;
+}
+.topAd.centerAd {
+    margin-bottom: 0;
+}
+.containerBg {
+    width: 100%;
+    background: #000;
+}
+
+/*--- 顶部栏 ---*/
+.topNav {
+    font-size: 14px;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+}
+.topNav div {
+    display: inline-block;
+}
+.topLogin {
+    margin-left: 50px;
+}
+.topLogin a {
+    color: #fff;
+    padding: 10px 0 10px 15px;
+}
+.topLogin a:first-child:after {
+    content: '|';
+    color: #fff;
+    padding-left: 15px;
+}
+.topNav .topRightBtn li {
+    float: left;
+    margin-right: 25px;
+}
+.topNav .topRightBtn li:last-child {
+    margin-right: 0;
+}
+.topNav .topRightBtn li a {
+    color: #fff;
+    background: #FF7700;
+    padding: 5px;
+    border-radius: 50%;
+}
+.topNav .topRightBtn li .icon-twitter {
+    font-size: 14px;
+    padding: 6px 5px;
+}
+.topNav .topRightBtn li .icon-wechat {
+    font-size: 14px;
+    padding: 6px 5px;
+}
+
+/*--- 底部 ---*/
+.containerBottom {
+    color: #fff;
+    text-align: center;
+    margin: 12px 10%;
+}
+.containerBottom p {
+    font-size: 12px;
+    padding-top: 20px;
+}
+.containerBottom .bottomAbout {
+    box-sizing: border-box;
+    padding-top: 3.5%;
+}
+.containerBottom .pull-left img {
+    width: 100%;
+}
+.bottomAbout a {
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 0 10px 15px;
+}
+.bottomAbout a:first-child:after {
+    content: '|';
+    color: #fff;
+    padding-left: 15px;
+}
+
+/*--- 首页轮播 ---*/
+.home-top-gallery {
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+    max-height: 460px;
+    margin-bottom: 16px;
+}
+.home-top-gallery .col-md-9 {
+    width: 85%;
+}
+.home-top-gallery .first-gallery {
+    background: #000;
+    padding: 0;
+}
+.home-slick-big img {
+    height: 460px;
+    width: 100%;
+    height: 460px;
+}
+.home-top-gallery .more-articles {
+    background: #000;
+}
+.home-top-gallery .slick-arrow, .home-top-gallery .slick-dots {
+    display: none !important;
+}
+.home-top-gallery .col-md-3 {
+    width: 15%;
+}
+.home-top-gallery .article-item {
+    padding: 5px;
+    border-bottom: 1px solid #3d3d3d;
+}
+.home-top-gallery .article-item > div {
+    padding: 8px 0 8px 8px;
+    height: 81px;
+}
+.article-item .item-img {
+    width: 95%;
+}
+.item-img img {
+    height: 65px;
+    width: 100%;
+}
+.home-top-gallery .article-item {
+    cursor: pointer;
+}
+.first-gallery .slick-caption {
+    position: absolute;
+    bottom: 0;
+    width: inherit;
+    background: rgba(0, 0, 0, .4);
+}
+.home-slick-thumb {
+    display: none;
+}
+.slick-caption a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 16px;
+}
+.slick-caption a p {
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.slick-caption a p:first-child {
+    font-size: 24px;
+    height: 30px;
+}
+.slick-caption a p:nth-child(2) {
+    font-size: 18px;
+    padding-top: 10px;
+    height: 32px;
+}
+.hasGalleryRow {
+    margin-top: 16px;
+}
+.hasGalleryRow .col-sm-9.article-9{
+    width: 74.55%;
+    box-sizing: border-box;
+    padding-right: 16px;
+}
+
+/*--- 右上广告 ---*/
+.hasGalleryRow .col-sm-3.rightTopAd {
+    width: 25.45%;
+}
+.hasGalleryRow .col-sm-3.rightTopAd img {
+   width: 100%;
+   height: 460px; 
+}
+
+/*--- 导航栏 ---*/
+.containerBg.navBorder {
+    border-bottom: 2px solid #000;
+    background: #F5F5F5;
+}
+.navBorder .navUl {
+    position: relative;
+}
+.navBorder .navUl > li {
+    float: left;
+    width: 8%;
+    text-align: center;
+    margin-right: 4.27%;
+}
+.navBorder .navUl > li > a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+}
+.navBorder .navUl > li > a:hover, .navBorder .navUl > li > a:active {
+    color: #FF7700;
+    border-bottom: 2px solid #FF7700;
+    margin-bottom: -2px;
+}
+.navBorder .navUl > li:first-child {
+    text-align: left;
+}   
+.navBorder .navUl > li:last-child {
+    text-align: right;
+    width: 7%;
+    margin-right: 0;
+}
+.navBorder .navUl > li:nth-child(2) {
+    width: 9%;
+}
+.navBorder .navUl > li:nth-child(4) {
+    width: 14%;
+}
+.navBorder .navUl > li:first-child a:hover {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+.navBorder .navUl > li:first-child:hover .dropdown-menu {
+    display: block;
+}
+.navBorder .navUl .dropdown-menu {
+    min-width: 100px;
+    left: -1%;
+}
+.navBorder .navUl .dropdown-menu li {
+    width: 100%;
+    text-align: center;
+}
+.navBorder .navUl .dropdown-menu li a {
+    padding: 10px 5px;
+}
+.navBorder .navUl .dropdown-menu li a:hover {
+    color: #FF7700;
+    background: rgba(0,0,0,0);
+    border-bottom: none;
+}
+.navBorder .navUl .dropdown-menu li a:focus {
+    background: rgba(0,0,0,0);
+}
+
+/*--- 搜索栏 ---*/
+.homeHead {
+    margin: 2.7% 0;
+    overflow: hidden;
+    height: 80px;
+    line-height: 80px;
+}
+.homeHead .left img {
+    width: 100%;
+}
+.homeHead .center {
+    position: relative;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+}
+.homeHead .center i {
+    position: absolute;
+    color: #999;
+    left: 13px;
+    top: 3px;
+    z-index: -1;
+}
+.homeHead .center input {
+    width: 59%;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 0;
+    padding: 0 10px;
+    background: transparent;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #dfdfdf;
+    padding-left: 15px;
+}
+.homeHead .center button {
+    background-color: #FF7700;
+    color: #fff;
+    width: 19%;
+    height: 40px;
+    line-height: 40px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+    vertical-align: top;
+    margin-top: 3.1%;
+    margin-left: -1%;
+}
+.homeHead .right {
+    text-align: right;
+}
+.homeHead .right img {
+    width: 80px;
+    height: 80px;
+}
+
+/*--- 首页 ---*/
+.col-sm-9.home-sm-9 {
+    width: 74.55%;
+    box-sizing: border-box;
+    padding-right: 16px;
+}
+.col-sm-3.home-sm-3 {
+    width: 25.45%;
+}
+.commonBox {
+    background: #fff;
+}
+.commonBox .commonNav {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+}
+.commonBox .commonTitle {
+    float: left;
+    height: 40px;
+}
+.commonBox .commonTitle > span {
+    background: #FF7700;
+    font-size: 18px;
+    color: #fff;
+    background: linear-gradient(-112deg, transparent 15px, #FF7700 0);
+    display: inline-block;
+    padding: 0 56px 0 16px;
+}
+.commonBox .commonTab {
+    float: right;
+}
+.commonBox .commonTab a {
+    cursor: pointer;
+    padding: 14px 10px 8px 10px; 
+    margin: 0 20px;
+    position: relative; 
+}
+.commonBox .commonTab a:hover {
+    color: #FF7700;
+    border-bottom: 2px solid #FF7700;
+}
+.commonBox .commonTab a:before {
+    content: '|';
+    position: absolute;
+    left: -15%;
+    color: #D8D8D8;
+}
+.commonBox .commonTab a:hover:before {
+    color: #D8D8D8;
+}
+
+
+/*--- 首页Featured ---*/
+.col-sm-9 .feaContent .content{
+    display: none;
+    box-sizing: border-box;
+    padding: 16px 16px 0 16px;
+}
+.col-sm-9 .feaContent .content.feaActive {
+    display:block;
+    height: 318px;
+}
+.commonBox .commonTab a.feaBtn {
+    color: #FF7700;
+    border-bottom: 2px solid #FF7700;
+}
+.swiper-container {
+    width: 100%;
+    padding-bottom: 46px;
+}
+.swiper-slide {
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+}
+.feaContent .swiper-slide a {
+    display: inline-block;
+    position: relative;
+    height: 160px;
+}
+.feaContent .swiper-slide img {
+    width: 100%;
+    height: 160px;
+}
+.feaContent .swiper-slide p {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, .4);
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    padding: 5px 12px;
+    height: 29px;
+}
+.swiper-pagination-bullet-active {
+    background: #FF7700;
+}
+.feaContent {
+    margin-bottom: 16px;
+}
+
+/*--- 侧边邮箱，post ---*/
+.treebox {
+    background: #fff;
+    padding-top: 10px;
+}
+.sideEmailBox {
+    padding: 10px 10% 0 10%;
+    text-align: center;
+    background: #fff;
+}
+.sideEmailBox p {
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+.sideEmailBox span {
+    font-size: 14px;
+    color: #666;
+}
+.sideEmailBox input {
+    border: 1px solid #ddd;
+    background: #eee;
+    border-radius: 20px;
+    height: 34px;
+    line-height: 34px;
+    padding-left: 16px;
+    margin-top: 30px;
+    width: 100%;
+}
+.sideEmailBox button {
+    height: 34px;
+    line-height: 34px;
+    background: #FF7700;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    border-radius: 20px;
+    margin: 20px 0 38px 0;
+}
+
+/*--- 手风琴下拉栏 ---*/
+.treebox .postTitle {
+    border-bottom: 1px solid #ededed;
+    text-align: center;
+    padding-bottom: 8px;
+}
+.treebox .postTitle > span {
+    padding-bottom: 10px;
+    font-size: 18px;
+    border-bottom: 1px solid #FF7700;
+    padding: 0 10px 12px 10px;
+}
+.treebox .menu { 
+    box-sizing: border-box;
+    padding: 0 16px;
+}
+/*第一层*/
+.menu li.level1 > a { 
+    display:block;
+    height: 45px;
+    line-height: 45px;
+    border-bottom: 1px solid #ededed; 
+    font-size: 16px;
+    position: relative;
+    transition:all .5s ease 0s;
+}
+.menu li.level1 > a:hover { 
+    text-decoration: none;
+    color: #FF7700;   
+}
+.menu li.level1 a.current { 
+    color: #FF7700; 
+}
+.level1 em {
+    padding-right: 16px;
+}
+/*小箭头*/
+.level1 i { 
+    width: 20px; 
+    height: 10px; 
+    background-image:url(../images/arrow.png); 
+    background-repeat: no-repeat; display: block; 
+    position: absolute; right: 20px; top: 20px; 
+}
+.level1 i.down { 
+    background-position: 0 -10px; 
+}
+
+/*第二层*/
+.menu li ul { 
+    overflow: hidden; 
+}
+.menu li ul.level2 { 
+    display: none;  
+}
+.menu li ul.level2 li a {
+    display: block;
+    font-size: 14px;
+    transition:all 1s ease 0s;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+.menu li ul.level2 li:first-child a {
+    padding-top: 16px;
+}
+.menu li ul.level2 li:last-child a {
+    padding-bottom: 0;
+}
+.menu li ul.level2.lastLevel {
+    display: block;
+}
+.menu li ul.level2 li a div {
+    float: left;
+    width: 40%;
+    height: 60px;
+    box-sizing: border-box;
+    padding-right: 10px;
+}
+.menu li ul.level2 li a div img {
+    width: 100%;
+}
+.menu li ul.level2 li a p {
+    float: left;
+    width: 60%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    height: 60px;
+}
+
+/*--- 首页Events ---*/
+.eventsContent {
+    height: 508px;
+}
+.col-sm-9 .eventsContent .content {
+    display: none;
+    box-sizing: border-box;
+    padding: 16px 16px 0 16px;
+}
+.col-sm-9 .eventsContent .content.eventsActive {
+    display: block;
+}
+.eventsTab a {
+    font-size: 12px;
+}
+.commonBox .commonTab.eventsTab a {
+    margin: 0 10px;
+    padding: 14px 10px 9px 10px;
+}
+.commonBox .commonTab a.eventsBtn {
+    color: #FF7700;
+    border-bottom: 2px solid #FF7700;
+}
+.eventsContent .eventsPer {
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+.eventsContent .eventsPer > div {
+    float: left;
+    height: 107px;
+}
+.eventsContent .eventsPer > div:first-child {
+    width: 42%;
+}
+.eventsContent .eventsPer > div:nth-child(2) {
+    width: 44%;
+    box-sizing: border-box;
+    padding: 0 16px;
+}
+.eventsContent .eventsPer > div:nth-child(3) {
+    width: 14%;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding-right: 16px;
+    text-align: center;
+}
+.eventsContent .eventsPer > div:first-child img {
+    width: 100%;
+}
+.eventsContent .eventsPer > div:nth-child(2) a p:first-child {
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    padding-bottom: 12px;
+    height: 55px;
+}
+.eventsContent .eventsPer > div:nth-child(2) a p:nth-child(2) {
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 40px;
+}
+.eventsContent .eventsPer > div:nth-child(3) p {
+    width: 38px;
+    background: #FF7700;
+    color: #fff;
+    border-radius: 4px 4px 0 0;
+}
+.eventsContent .eventsPer > div:nth-child(3) span {
+    width: 38px;
+    display: block;
+    background: #eaeaea;
+    border-radius: 0 0 4px 4px;
+}
+.eventsContent .col-sm-6:nth-child(2) .eventsPer > div:nth-child(3) {
+    padding-right: 0;
+    width: 10%;
+}
+.eventsContent .col-sm-6:nth-child(2) .eventsPer > div:first-child {
+    width: 46%;
+    box-sizing: border-box;
+    padding-left: 4%;
+}
+
+/*--- 首页Articles ---*/
+.commonBox.articlesBox {
+    height: 460px;
+}
+.commonContent.articlesContent{
+    box-sizing: border-box;
+    padding: 16px 16px 0 16px;
+}
+.articles-home {
+    margin-top: 16px;
+}
+.articlesContent .articlesPer {
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+.articlesContent .articlesPer img {
+    width: 100%;
+}
+.articlesContent .articlesPer > div {
+    float: left;
+}
+.articlesContent .articlesPer > div:first-child {
+    width: 42%;
+}
+.articlesContent .articlesPer > div:nth-child(2) {
+    width: 58%;
+    box-sizing: border-box;
+    padding-left: 16px;
+}
+.articlesContent .articlesPer > div:nth-child(2) p {
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 50px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.articlesContent .articlesPer > div:nth-child(2) p:nth-child(2) {
+    font-size: 14px;
+    height: 40px;
+    margin-bottom: 0;
+}
+
+/*--- 首页商城Deals ---*/
+.martDeals {
+    margin-top: 16px;
+}
+.martDeals .row {
+    margin-right: -2%;
+    padding: 60px 0;
+}
+.martDeals .pull-left {
+    width: 18%;
+    margin-right: 2%;
+    background: #fff;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+.martDeals .pull-left .dealGoods div:nth-of-type(1) {
+    width: 100%;
+    height: 200px;
+}
+.martDeals .pull-left .dealGoods div:nth-of-type(1) img {
+    width: 100%;
+    padding: 6px;
+    height: 200px;
+}
+.martDeals .pull-left .dealGoods div:nth-of-type(2) {
+    overflow: hidden;
+    padding: 12px 6%;
+}
+.martDeals .pull-left .dealGoods p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-align: center;
+    padding: 0 6%;
+    height: 41px;
+}
+.martDeals .pull-left .dealGoods span{
+    color: #F9421E;
+    float: left;
+}
+.martDeals .pull-left .dealGoods del {
+    float: right;
+}
+.dealTitle img {
+    width: 14%;
+}
+.dealTitle .title {
+    width: 30%;
+    height: 60px;
+    line-height: 60px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 0 0 50px 50px;
+    position: relative;
+}
+.dealTitle .title span {
+    font-size: 20px;
+    vertical-align: middle;
+}
+.dealTitle .title b {
+    color: #999;
+    padding: 0 10px;
+}
+
+/*--- Magazines ---*/
+.magazinesBoxBig {
+    margin-top: 16px;
+    height: 348px;
+}
+.commonBox .commonTab a.magazinesBtn {
+    color: #FF7700;
+    border-bottom: 2px solid #FF7700;
+}
+.magazinesContent .content {
+    display: none;
+    padding: 16px 0 0 16px;
+    box-sizing: border-box;
+}
+.magazinesContent .content.magazinesActive {
+    display: block;
+}
+.commonBox .commonTab.magazinesTab a {
+    padding: 14px 30px 9px 30px;
+}
+.magazinesBox {
+    overflow: hidden;
+    margin-right: -3%;
+}
+.magazinesBox .box {
+    float: left;
+    width: 30%;
+    margin-right: 3%;
+    padding-bottom: 16px;
+}
+.magazinesBox .box .col-sm-4 img {
+    width: 100%;
+}
+.magazinesBox .box .col-sm-4 {
+    padding-right: 16px;
+    box-sizing: border-box;
+}
+.magazinesBox .box .col-sm-8 a span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 42px;
+}
+.magazinesBox .box .col-sm-8 > p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    font-size: 12px;
+    height: 17px;
+    margin-top: 10px;
+}
+.magazinesBox .box .col-sm-8 > div {
+    margin-top: 16px;
+}
+.magazinesBox .box .col-sm-8 > div a {
+    border-radius: 17px;
+    font-size: 14px;
+    padding: 4px 8px;
+}
+.magazinesBox .box .col-sm-8 > div a:first-child {
+    color: #FF7700;
+    border: 1px solid #FF7700;
+    margin-right: 4px;
+}
+.magazinesBox .box .col-sm-8 > div a:nth-child(2) {
+    color: #0A59A8;
+    border: 1px solid #0A59A8;
+}
+.footer {
+    margin-top: 16px;
+}
+/*--- 侧边thmart ---*/
+.martBox {
+    margin-top: 16px;
+}
+.marttreebox {
+    background: #fff;
+}
+.marttreebox .postTitle img {
+    width: 9%;
+}
+.marttreebox .postTitle span i {
+    display: inline-block;
+    vertical-align: text-top;
+    padding-left: 12px;
+}
+.martContent {
+    padding: 16px 16px 0 16px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ededed;
+}
+.martContent .row {
+    padding-bottom: 20px;
+}
+.martContent .row .col-sm-4 img {
+    width: 100%;
+    height: 83px;
+}
+.martContent .row .col-sm-8 {
+    padding-left: 16px;
+    box-sizing: border-box;
+}
+.martContent .row .col-sm-8 p {
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    height: 60px;
+    padding-bottom: 2px;
+}
+.martContent .row .col-sm-8 span {
+    color: #FF7700;
+    font-size: 14px;
+}
+.martContent .title {
+    font-size: 18px;
+    color: #FF7700;
+    border-bottom: 1px solid #ededed;
+    margin-bottom: 16px;
+    padding-bottom: 4px;
+}
+.martContent .iconfont {
+    padding-right: 16px;
+}
+
+/*--- directory ---*/
+.eventsmartContent.martContent .row .col-sm-4 img {
+    height: 58px;
+}
+.eventstreeBox {
+    margin-top: 16px;
+}
+.rightCenterAd img {
+    width: 100%;
+    margin-top: 16px;
+}
+.topSelectBox {
+    background: #fff;
+    padding: 15px 0 0 15px;
+    box-sizing: border-box;
+    margin-top: 16px;
+}
+.topSelectBox .col-sm-2 {
+    border-right: 1px solid #EEEEEE;
+    width: 14%;
+}
+.topSelectBox .col-sm-10 {
+    width: 86%;
+}
+.topSelectBox .col-sm-10 ul {
+    overflow: hidden;
+}
+.topSelectBox .col-sm-10 ul li {
+    float: left;
+}
+.topSelectBox .col-sm-10 ul li a {
+    display: inline-block;
+    padding: 0 20px 12px 14px;
+    font-size: 14px;
+}
+.topSelectBox .col-sm-10 ul li:hover a, .topSelectBox .col-sm-10 ul li:active a  {
+    color: #FF7700;
+}
+
+.morePageBox {
+    margin-top: 16px;
+}
+.morePageBox .orangBg {
+    padding: 16px;
+    background: #FDE7D5;
+}
+.morePageBox .orangBg.whiteBg {
+    background: #fff;
+}
+.morePageBox .orangBg .row {
+    background: #fff;
+    padding: 16px;
+    margin-bottom: 16px; 
+    position: relative; 
+}
+.morePageBox .orangBg .sponsor {
+    position: absolute;
+    right: -14%;
+}
+.morePageBox .orangBg .sponsor img {
+    width: 50%;
+}
+.morePageBox .orangBg.whiteBg .row {
+    padding-top: 0;
+    padding-right: 0; 
+    border-bottom: 1px solid #eee;   
+}
+.morePageBox .orangBg .row:last-child {
+    margin-bottom: 0;  
+}
+.morePageBox .orangBg.whiteBg .row:last-child {
+    padding-bottom: 0; 
+    border-bottom: none; 
+}
+.morePageBox .orangBg .row .col-sm-4 img {
+    width: 100%;
+    height: 160px;
+}
+.morePageBox .orangBg .row .col-sm-8 {
+    padding-left: 22px;
+}
+.morePageBox .orangBg .row .col-sm-8 > p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    height: 24px;
+    margin-bottom: 14px;
+}
+.morePageBox .orangBg .row .col-sm-8 > p a {
+    font-size: 18px;
+}
+.morePageBox .orangBg .row .col-sm-8 > div p {
+    overflow: hidden;
+}
+.morePageBox .orangBg .row .col-sm-8 > div p i {
+    display: inline-block;
+    color: #666;
+    float: left;
+    width: 17%;
+}
+.morePageBox .orangBg .row .col-sm-8 > div p span {
+    float: left;
+    width: 83%;
+}
+.morePageBox .orangBg .row .col-sm-8 > div p {
+    margin-bottom: 6px;
+}
+.morePageBox .orangBg .row .col-sm-8 > div a {
+    font-size: 14px;
+    color: #666;
+    padding: 3px 8px;
+    margin-right: 8px;
+    background: #FFF0E4;
+    border-radius: 12px;
+ }
+.morePageBox .orangBg .row .col-sm-8 > div a.bg {
+    color: #FF7700;
+}
+
+.page-run {
+    text-align: center;
+    margin-right: 0 !important;
+    margin-bottom: 20px;
+}
+.pagination > li {
+    display: inline-block;
+}
+.directorySwiperBox {
+    background: #fff;
+    margin-top: 16px;
+}
+.directorySwiper .swiper-slide img {
+    width: 100%;
+}
+
+.directorySwiperBox {
+    padding: 16px 16px 0 16px;
+    box-sizing: border-box;
+}
+.directorySwiperBox h3 {
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    margin-bottom: 16px;
+}
+.directorySwiperBox h3:before, .directorySwiperBox h3:after {
+    content: '';
+    position: absolute;
+    top: 52%;
+    background: #D8D8D8;
+    width: 9%;
+    height: 1px;
+}
+.directorySwiperBox h3:before{
+    left: 25%;
+}
+.directorySwiperBox h3:after {
+    right: 25%;
+}
+.directorySwiper .swiper-slide a {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+.directorySwiper .swiper-slide a span {
+    position: absolute;
+    color: #fff;
+    background-color: rgba(0,0,0,.4);
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    padding: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    height: 31px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--- 首页2 ---*/
+.carousel-inner>.item>a>img {
+    height: 300px;
+    width: 100%;
+}
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+}
+.Carousel-box .index-Carousel .carousel-control {
+    font-size: 55px;  
+    top: 30%;
+}
+.Carousel-box .index-Carousel .carousel .carousel-caption {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 10px 16px;
+    background-color: rgba(0,0,0,.4);
+}
+.Carousel-box .index-Carousel .carousel .carousel-caption a {
+    color: #fff;
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 50px;
+}
+.homeRightTopAd {
+    margin: 16px 0;
+}
+.commonBox.articlesBox.articlesBoxTwo {
+    height: 300px;
+    margin-top: 16px;
+}
+.eventsContent.eventContent {
+    height: 267px;
+}
+.indexTopLeft {
+    margin: 16px 0;
+}
+.unknow {
+    height: 130px;
+    background: #FBD2AD;
+    margin: 16px 0;
+}
+.col-sm-9 .feaContent .content.feaActive.contents {
+    display: block;
+    height: 400px;
+}
+.sideEmailBox button.subscribe {
+    margin: 20px 0 15px 0;
+}
+.indexTopLeft .col-sm-7 {
+    box-sizing: border-box;
+    padding-right: 16px;
+}
+
+.directoryBox .title {
+    height: 28px;
+    line-height: 28px;
+    background: #118CCF;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 0 16px;
+}
+.directoryBox .title > span {
+    font-size: 20px;
+    margin-right: 5px;
+}
+.commonBox.featuredBox .commonTab a {
+    margin: 0 12px 0 10px;
+}
+.directoryBox .scroll {
+    overflow: hidden;
+    height: 272px;
+}
+.zUIpanelScrollBox,.zUIpanelScrollBar{
+    width: 10px;
+    top: 4px;
+    right: 2px;
+    border-radius: 5px;
+    
+}
+.zUIpanelScrollBox{
+    border: 1px solid black;
+    opacity: 0.1;
+    filter: alpha(opacity=10);
+}
+.zUIpanelScrollBar{
+    background: #ccc;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+.directoryBox .btn-default {
+    background-color: #118CCF;
+    color: #fff;
+    border: none;
+    font-size: 12px;
+    padding: 0;
+    box-shadow: none;
+}
+.directoryBox .btn-default:hover {
+    box-shadow: none;
+    border: none;
+    color: #fff;
+}
+.directoryBox .bootstrap-select.btn-group .dropdown-toggle .filter-option:hover {
+    background-color: #118CCF;
+    color: #fff;
+    border: none;
+    box-shadow: none;
+}
+.directoryBox .bootstrap-select.btn-group .dropdown-toggle .filter-option:active {
+    border: none;
+    color: #fff;
+}
+.directoryBox .btn-default.active, .directoryBox .btn-default:active, .directoryBox .open>.dropdown-toggle.btn-default {
+    background-color: #118CCF;
+    color: #fff;
+    border: none;
+    box-shadow: none;
+}
+.directoryBox .bootstrap-select.btn-group .dropdown-toggle .caret:hover {
+    color: #fff;
+}
+.directoryBox .bootstrap-select.btn-group .dropdown-toggle .caret:active {
+    color: #fff;
+}
+.directoryBox .dropdown-menu {
+    left: -14px;
+}
+.commonBox .commonTitle.citiesTitle  {
+    background: #FF7700;
+    font-size: 18px;
+    color: #fff;
+    background: linear-gradient(-112deg, transparent 15px, #FF7700 0);
+    display: inline-block;
+    width: 26%;
+    padding: 0 16px; 
+}
+.citiesTitle .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 67%;
+}
+.citiesTitle .btn-default {
+    background: #FF7700;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+.citiesTitle .bootstrap-select .dropdown-toggle:focus {
+    outline: none;
+    border: none !important:;
+}
+.citiesTitle .bootstrap-select>.dropdown-toggle:active {
+    border: none;
+    outline: none;
+}
+
+.directoryBox .box {
+    background: #fff;
+    box-sizing: border-box;
+    padding: 16px 24px 0 16px;
+    height: 272px;
+}
+.directoryBox .box .col-sm-4
+img {
+    width: 100%;
+    padding-right: 16px;
+    height: 52px;
+}
+.directoryBox .box .row {
+    padding-bottom: 12px;
+}
+.directoryBox .box .col-sm-4 a {
+    display: inline-block;
+    width: 98px;
+    height: 53px;
+}
+.directoryBox .box .col-sm-8 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 44px;
+    overflow: hidden;
+}
+
+.col-sm-9 .citiesContent .content {
+    display: none;
+}
+.col-sm-9 .citiesContent .content.citiesActive {
+    display: block;
+}
+.commonBox .commonTab a.citiesBtn {
+    color: #FF7700;
+    border-bottom: 2px solid #FF7700;
+}
+.commonBox.citiesBox .commonTab a {
+    margin: 0 12px 0 4px;
+}
+.citiesContent {
+    padding: 12px 16px 0 16px;
+}
+
+.cityPer .row {
+    padding-bottom: 14px;
+}
+.cityPer .row .col-sm-3 img {
+    width: 96%;
+    padding-right: 16px;
+    height: 104px;
+}
+.cityPer .row .col-sm-9 a {
+    padding-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    height: 26px;
+}
+.cityPer .row .col-sm-9 p {
+    color: #666;
+    padding-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 48px;
+}
+.cityPer .row .col-sm-9 span {
+    color: #666;
+    font-size: 14px;
+}
+.commonBox.citiesBox {
+    height: 996px;
+}
+.treebox .postTitle.cityTitle {
+    padding-bottom: 4px;
+}
+.eventstreeBox .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 40%;
+}
+.eventstreeBox .btn-default {
+    border: none;
+}
+.eventstreeBox .btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default {
+    background: #fff;
+    border: none;
+    outline: none;
+}
+.eventstreeBox .btn-default:focus {
+    background: #fff;
+    border: none;
+    outline: none;
+}
+.home-sm-9 > .articleDetail {
+    background: #fff;
+    padding: 16px;
+    box-sizing: border-box;
+    margin-top: 16px;
+}
+.home-sm-9 > .articleDetail .hasPicture {
+    width: 100%;
+    text-align: center;
+}
+.home-sm-9 > .articleDetail > h3 {
+    padding-top: 10px;
+    padding-bottom: 16px;
+}
+.home-sm-9 > .articleDetail .author {
+    padding-bottom: 18px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 42px;
+    overflow: hidden;
+}
+.home-sm-9 > .articleDetail .author span:first-child {
+    font-size: 14px;
+    color: #666;
+}
+.home-sm-9 > .articleDetail .author span:nth-child(2) {
+    float: right;
+}
+.home-sm-9 > .articleDetail .author span:nth-child(2) a {
+    padding-left: 10px;
+}
+.home-sm-9 > .articleDetail .contentDetail img {
+    padding-bottom: 16px; 
+}
+.home-sm-9 > .articleDetail .contentDetail p {
+    padding-bottom: 16px;
+}
+.home-sm-9 > .articleDetail .contentDetail {
+    border-bottom: 1px solid #eee;
+}
+.home-sm-9 > .articleDetail .tips a {
+    font-size: 14px;
+    color: #666;
+    padding: 3px 8px;
+    margin-right: 8px;
+    background: #FFF0E4;
+    border-radius: 12px;
+}
+.home-sm-9 > .articleDetail .tips {
+    margin-top: 20px;
+    margin-bottom: 32px;
+}
+.home-sm-9 > .articleDetail .tips a.bg {
+    color: #FF7700;
+}
+
+
+
+
+
+
+
+
+/*--- 媒体查询 ---*/
+
+/*各个尺寸浏览器*/
+@media (max-width: 1000px) {
+    
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+   
+}
+/*所有手机*/
+@media screen and (max-width: 767px) {
+
+
+
+
+}
+
+
+
+
+
+
