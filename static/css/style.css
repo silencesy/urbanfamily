@@ -206,6 +206,7 @@ a:active {
     margin: 0 auto;
     max-height: 460px;
     margin-bottom: 16px;
+    margin-top: 16px;
 }
 .home-top-gallery .col-md-9 {
     width: 85%;
@@ -1861,14 +1862,246 @@ img {
     padding: 24px 0 40px 0;
 }
 
+/*--- 登录页面 ---*/
+.loginGroupWrapper {
+    background: #fff;
+}
+.loginBg {
+    background: url("../../static/images/lu.jpg") center;
+    width: 100%;
+    height: 750px;
+    background-size: cover;
+    overflow: hidden;
+}
+.loginGroupTop .pull-right img {
+    width: 80px;
+    height: 80px;     
+}
+.loginGroupTop .pull-left {
+    height: 80px;
+    line-height: 80px;
+}
+.loginGroupTop .pull-left span {
+    font-family: 'Bebas';
+    font-size: 30px;
+    border-left: 1px solid #dfdfdf;
+    padding-left: 20px;
+}
+.loginGroupTop .row {
+    margin: 14px 0;
+}
+.loginGroupTop .pull-left a {
+    display: inline-block;
+}
+.loginGroupTop .pull-left img {
+    vertical-align: top;
+    padding-right: 20px;
+}
+.loginGroupWrapper .footer {
+    margin-top: 0;
+}
+.loginBg {
+    overflow: hidden;
+}
+.loginBox {
+    float: right;
+    margin-top: 200px;
+    width: 350px;
+    height: 350px;
+    background-color: #fff;
+}
+.loginNav {
+    overflow: hidden;
+    border-bottom: 1px solid #dfdfdf;
+}
+.loginNav a {
+    cursor: pointer;
+    float: left;
+    width: 50%;
+    text-align: center;
+    padding: 20px 0;
+}
+.loginNav .loginTab {
+    color: #FF7700;
+}
+.loginContentBox .box {
+    display: none;
+} 
+.loginContentBox .box.loginActive {
+    display: block;
+} 
+.loginNav a:first-child:after {
+    content: '|';
+    float: right;
+    color: #666;
+}
+.submitBtn .btn {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background-color: #FF7700;
+    border-radius: 4px;
+    box-shadow: none;
+}
+.loginContentBox {
+    padding: 16px;
+    box-sizing: border-box;
+}
+.loginContentBox .common {
+    width: 100%;
+}
+.loginContentBox input {
+    height: 36px;
+    border: 1px solid #dfdfdf;
+    float: left;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-bottom: 24px;
+    padding-left: 11%;
+}
+.loginContentBox .row {
+    position: relative;
+}
+.loginContentBox .row .iconfont {
+    position: absolute;
+    top: 10%;
+    left: 3%;
+    color: #c0c4cc;
+    text-align: center;
+}
+.loginContentBox input#codeBtn {
+    position: absolute;
+    right: 2%;
+    height: 30px;
+    top: 5%;
+    padding: 0 20px;
+    color: #fff;
+    background: #FF7700;
+}
+.hrefBtn {
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 0 16px;
+}
+.hrefBtn a {
+    font-size: 14px;
+    color: #666;
+}
+.hrefBtn a:first-child {
+    float: left;
+}
+.hrefBtn a:nth-child(2) {
+    float: right;
+}
 
-
-
-
-
-
-
-
+.weChatBtn p {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    position: relative;
+    margin-top: 10px;
+}
+.weChatBtn p:before, .weChatBtn p:after {
+    content: '';
+    position: absolute;
+    top: 52%;
+    background: #D8D8D8;
+    width: 9%;
+    height: 1px;
+}
+.weChatBtn p:before{
+    left: 25%;
+}
+.weChatBtn p:after {
+    right: 25%;
+}
+.weChatBtn div {
+    width: 100%;
+    text-align: center;
+}
+.weChatBtn div span {
+    color: #4caf50;
+    font-size: 28px;
+    cursor: pointer;
+}
+.containerBg.titleLine {
+    background: #fff;
+} 
+.titleLine {
+    border-bottom: 2px solid #000;
+}
+.groupFrom {
+    height: 750px;
+}
+.groupFrom .step {
+    width: 62%;
+    margin: 0 auto;
+}
+.groupFrom .step ul {
+    overflow: hidden;
+    position: relative;
+    margin: 10% 0;
+}
+.groupFrom .step ul li {
+    float: left;
+    margin-right: 10%;
+    text-align: center;
+}
+.groupFrom .step ul li:last-child {
+    margin-right: 0;
+}
+.step ul li i {
+    color: #999;
+    border: 1px solid #dfdfdf;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+.step ul li .green {
+    color: #fff;
+    background-color: #13a230;
+}
+.step ul li span {
+    display: block;
+    color: #666;
+}
+.step ul p {
+    position: absolute;
+    width: 13%;
+    border-top: 1px dashed #dfdfdf;
+    top: 13px;
+    left: 24%;
+}
+.step ul .plusLine {
+    left: 60%;
+}
+.groupFrom .formContent {
+    width: 39%;
+    margin: 0 auto;
+}
+.formContent .loginContentBox input {
+    padding-left: 10px;
+}
+.pW {
+    text-align: center;
+    margin-bottom: 240px;
+}
+.pW i {
+    display: block;
+    font-size: 36px;
+    color: #6ea55d;
+}
+.pW p {
+    margin-top: 20px;
+}
+.pW p a {
+    color: #FF7700;
+}
 
 /*--- 媒体查询 ---*/
 
