@@ -67,7 +67,7 @@ a:active {
     color: #222;
     text-decoration: none;
 }
- a:focus {
+a:focus {
     color: #222;
     outline:none;
 }
@@ -126,7 +126,9 @@ a:active {
     width: 100%;
     background: #000;
 }
-
+.bootstrap-select .dropdown-toggle:focus {
+    outline: none !important;
+}
 /*--- 顶部栏 ---*/
 .topNav {
     font-size: 14px;
@@ -2102,6 +2104,135 @@ img {
 .pW p a {
     color: #FF7700;
 }
+.sign {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 200px;
+}
+.sign a {
+    font-size: 14px;
+    color: #f9421e;
+}
+
+/*--- 个人中心 ---*/
+.userCenterContainer {
+    padding-top: 16px;
+}
+.userCenterContainer .col-sm-2 {
+    width: 20%;
+    padding-right: 16px;
+    box-sizing: border-box;
+}
+.userCenterContainer .col-sm-10 {
+    width: 80%;
+}
+.headImgBox {
+    border-bottom: 1px solid #dfdfdf;
+}
+.userCenterContainer .col-sm-2 .userLeft {
+    background: #fff;
+}
+.headImgBox li a {
+    display: inline-block;
+    width: 100%;
+    padding: 28px 0 16px 0;
+    text-align: center;
+}
+.headImgBox li a .hasImg {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-color: #eee;
+    border-radius: 40px;
+}
+.headImgBox li a .hasImg img {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    text-align: center;
+    display: block;
+}
+.headImgBox li a p {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 4px 15px;
+}
+
+.userNav a {
+    display: inline-block;
+    width: 100%;
+    padding: 7px 0;
+    text-align: center;
+}
+.userNav a.activeNav {
+    background-color: #fff;
+    border-left: 4px solid #FF7700;
+    color: #FF7700;  
+}
+.userNav a:hover {
+    color: #FF7700;
+}
+.userNav {
+    padding-bottom: 20px;
+}
+.userCenterRow {
+    background: #fff;
+    box-sizing: border-box;
+    padding: 16px;
+}
+.userCenterRow .col-sm-6 {
+    text-align: center;
+}
+.userCenterRow .col-sm-6 span {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #ff77003d;
+    color: #FF7700;
+    border-radius: 25px;
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+.userCenterRow .col-sm-6 a {
+    color: #fff;
+    background: #FF7700;
+    padding: 9px 26px;
+    border-radius: 17px;
+}
+.userCenterRow .row:first-child .col-sm-6:first-child {
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.userCenterRow .row:nth-child(2) .col-sm-6:nth-child(2) {
+    border-top: 1px solid #eee;
+    border-left: 1px solid #eee;
+}
+.userCenterRow .row:first-child .col-sm-6 {
+    padding: 16px 16px 30px;
+}
+.userCenterRow .row:nth-child(2) .col-sm-6 {
+    padding: 30px 16px 16px;
+}
+.userCenterBox p {
+    line-height: 30px;
+    color: #666;
+    font-size: 14px;
+    margin-left: 16px;
+}
+.userCenterBox p:nth-of-type(1) {
+    margin-top: 12px;
+    padding-left: 10px;
+    text-indent: -21px;
+}
+
+
+
+
 
 /*--- 媒体查询 ---*/
 
