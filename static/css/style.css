@@ -2218,19 +2218,127 @@ img {
 .userCenterRow .row:nth-child(2) .col-sm-6 {
     padding: 30px 16px 16px;
 }
-.userCenterBox p {
+.userCenterBox .userCenterP {
     line-height: 30px;
     color: #666;
     font-size: 14px;
     margin-left: 16px;
 }
-.userCenterBox p:nth-of-type(1) {
+.userCenterBox .userCenterP.userCenterPF {
     margin-top: 12px;
     padding-left: 10px;
     text-indent: -21px;
 }
-
-
+.userCenterBox .title {
+    overflow: hidden;
+    border-bottom: 1px solid #eee;
+}
+.userCenterBox .title > span {
+    float: left;
+    padding-bottom: 12px;
+}
+.userCenterBox .title > div {
+    float: right;
+}
+.userCenterBox .title > div > a {
+    display: inline-block;
+    margin-left: 24px;
+    color: #666;
+    cursor: pointer;
+}
+.userCenterBox .title > div > a:hover {
+    color: #FF7700;
+}
+.userCenterBox .title > div > a.actveListing {
+    color: #FF7700;
+    border-bottom: 1px solid #FF7700;
+    padding-bottom: 12px;
+}
+.userCenterBox .content .listPer {
+    position: relative;
+    padding: 16px 0;
+    border-bottom: 1px solid #eee;
+}
+.userCenterBox .content .listPer > a {
+    width: 80%;
+    display: block;
+    overflow: hidden;
+}
+.userCenterBox .content .listPer > a div {
+    float: left;
+}
+.userCenterBox .content .listPer > a div:first-child {
+    width: 18%;
+} 
+.userCenterBox .content .listPer > a div:first-child img {
+    width: 100%;
+} 
+.userCenterBox .content .listPer > a div:nth-child(2) {
+    width: 80%;
+    box-sizing: border-box;
+    padding-left: 16px;
+}
+.userCenterBox .content .listPer > a div:nth-child(2) p {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+.userCenterBox .content .listPer > a div:nth-child(2) span {
+    color: #666;
+} 
+.userCenterBox .content .listPer .threeIcon {
+    color: #FF7700;
+    position: absolute;
+    right: 0;
+    top: 16px;
+}
+.userCenterBox .content .listPer .threeIcon span {
+    display: block;
+    margin-bottom: 14px;
+}
+.userCenterBox .totalContent .page-run {
+    margin-bottom: 0;
+} 
+.userCenterBox .totalContent .page-run .pagination {
+    margin-bottom: 0;
+}
+.userCenterBox .content .listPer .threeIcon > a {
+    display: block;
+    padding: 6px;
+    margin-bottom: 4px;
+    font-size: 14px;
+    color: #FF7700;
+    padding-right: 0;
+    text-align: right;
+}
+.userCenterBox .title .postsActive {
+    color: #FF7700;
+}
+.userCenterBox .title .commentsActive {
+    color: #FF7700;
+}
+.userCenterBox .content .listPer > a.listPerComment {
+    width: 100%;
+    background: #eee;
+    box-sizing: border-box;
+    padding: 8px 16px;
+}
+.userCenterBox .content .listPer > a.listPerComment div:first-child {
+    width: 10%;
+    height: 53px;
+}
+.userCenterBox .content .listPer > a.listPerComment div:nth-child(2) {
+    width: 90%;
+}
+.userCenterBox .content .listPer > a.listPerComment div:first-child img {
+    height: 53px;
+}
+.userCenterBox .content .listPer .commentsFoot {
+    padding: 16px 16px 0 16px;
+}
+.userCenterBox .content .listPer .commentsFoot span {
+    color: #666;
+    font-size: 12px;
+}
 
 
 
