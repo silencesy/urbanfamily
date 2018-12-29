@@ -26,7 +26,7 @@ $(function(){
                 $('.icon-dislike').addClass('actveListing');
                 $('.icon-all, .icon-collents, .icon-like').removeClass('actveListing');
                 $('.listNotLike').css('display', 'block');
-                $('.listLike, .listHeartLike').css('display', 'none');
+                $('.listHeart, .listLike, .listHeartLike').css('display', 'none');
                 break;
             }
         }

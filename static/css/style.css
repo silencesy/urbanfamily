@@ -71,6 +71,9 @@ a:focus {
     color: #222;
     outline:none;
 }
+.typeActive:active, .cityActive:active, .regionActive:active {
+    color: #FF7700;
+}
 /*重置bootstrap*/ 
 .container {
     padding: 0;
@@ -2339,6 +2342,224 @@ img {
     color: #666;
     font-size: 12px;
 }
+.userCenterBox .orderTitle {
+    border-bottom: 1px solid #dfdfdf;
+}
+.userCenterBox .orderTitle span:first-child {
+    width: 29%;
+}
+.userCenterBox .orderTitle span {
+    width: 17.2%;
+    text-align: center;
+    display: inline-block;
+    padding: 15px 0;
+}
+.userOrder .orderDetail {
+    margin-top: 15px;
+    border: 1px solid #dfdfdf;
+}
+.userOrder .orderDetail .date {
+    height: 36px;
+    line-height: 36px;
+    background-color: #eee;
+    padding: 0 15px;
+}
+.userOrder .orderDetail .details {
+    overflow: hidden;
+    width: 100%;
+}
+.userOrder .orderDetail .details .detailsLeft {
+    float: left;
+    overflow: hidden;
+    width: 65%;
+}
+.userOrder .orderDetail .details .detailsLeft .listPer {
+    overflow: hidden;
+    border-bottom: 1px solid #dfdfdf;
+}
+.userOrder .orderDetail .details .detailsLeft .listPer:last-child {
+    border-bottom: none;
+    overflow: hidden;
+    width: 100%;
+}
+.userOrder .orderDetail .details .detailsLeft .listPer .goods {
+    overflow: hidden;
+    margin-left: 15px;
+    padding-right: 15px;
+    width: 43%;
+    height: 114px;
+    border-right: 1px solid #dfdfdf;
+}
+.userOrder .orderDetail .details .detailsLeft .listPer > div {
+    float: left;
+}
+.userOrder .orderDetail .details .detailsLeft .listPer .goods a {
+    display: inline-block;
+    padding: 15px 0;
+}
+.userOrder .orderDetail .details .detailsLeft .listPer .goods a > div {
+    float: left;
+}
+.userOrder .orderDetail .details .detailsLeft .listPer .goods a > div:first-child {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+.userOrder .orderDetail .details .detailsLeft .listPer .goods a > div:first-child img {
+    width: 80px;
+    height: 80px;
+}
+.userOrder .orderDetail .details .detailsLeft .listPer .goods a > div:nth-child(2) {
+    width: 50%;
+}
+.userOrder .orderDetail .details .detailsLeft .listPer .goods a > div:nth-child(2) p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-height: 22px;
+    min-height: 44px;
+}
+.userOrder .orderDetail .details .detailsLeft .listPer .goods a > div:nth-child(2) span {
+    display: block;
+    font-size: 14px;
+    color: #666;
+}
+.userOrder .orderDetail .details .detailsLeft .listPer .price {
+    width: 27%;
+    height: 114px;
+    text-align: center;
+    border-right: 1px solid #dfdfdf;
+    position: relative;
+}
+.userOrder .orderDetail .details .detailsLeft .listPer .price > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.userOrder .orderDetail .details .detailsLeft .listPer .price > div span {
+    display: block;
+    color: #f9421e;
+}
+.userOrder .orderDetail .details .detailsRight {
+    overflow: hidden;
+    float: left;
+    width: 35%;
+}
+.userOrder .orderDetail .details .detailsRight .right {
+    float: left;
+    width: 50%;
+    position: relative;
+    height: 114px;
+}
+.userOrder .orderDetail .orderTwoGoods.details .detailsRight .right {
+    height: 228px;
+}
+.userOrder .orderDetail .details .detailsRight .right:first-child {
+    border-right: 1px solid #dfdfdf;
+    text-align: center;
+}
+.userOrder .orderDetail .details .detailsRight .right > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.userOrder .orderDetail .details .detailsRight .right:first-child p {
+    color: #f9421e;
+    margin-bottom: 10px;
+}
+.userOrder .orderDetail .details .detailsRight .rightBtn > div button {
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    border: 1px solid #dfdfdf;
+    font-size: 16px;
+}
+.userInfo .info {
+    margin-top: 20px;
+}
+.userInfo .info > div {
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.userInfo .info > div > span {
+    float: left;
+    width: 19%;
+    display: inline-block;
+}
+.userInfo .info > div:first-child > span {
+    margin-top: 35px;
+}
+.userInfo .info > div > div {
+    float: left;
+    color: #666;
+}
+.userInfo .info > div .photo {
+    position: relative;
+}
+.userInfo .info > div .photo > div {
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+    background-color: #eee;
+    border-radius: 40px;
+    float: left;
+}
+.userInfo .info > div .photo > div img {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+}
+.userInfo .info > div .photo .photoBtn {
+    float: left;
+    width: 100px;
+    height: 30x;
+    text-align: center;
+    line-height: 30px;
+    background-color: #fff;
+    font-size: 16px;
+    color: #666;
+    border: 1px solid #dfdfdf;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.userInfo .info .icon-bianji {
+    padding-left: 30px;
+}
+.userInfo .info>div .name span, .user .container .userInfo .info>div .password span {
+    cursor: pointer;
+}
+.userInfo .info > div > .password {
+    display: inline-block;
+    border: 1px solid #dfdfdf;
+    width: 100px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 4px;
+}
+.noselect {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+}
+.userInfo .info > div .password span {
+    cursor: pointer;
+}
+
+
+
 
 
 
