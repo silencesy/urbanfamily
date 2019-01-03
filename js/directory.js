@@ -18,4 +18,41 @@ $(function(){
       },
     });
 
+    // 添加评论弹出框
+    $('#addComment').click(function() {
+        $('.outBox').show();
+        $('.info-popup').show();
+        $('.info-popup-backdrop').show();
+    });
+    
+    $('.info-cancel').click(function() {
+        $('.outBox').hide();
+        $('.info-popup').hide();
+        $('.info-popup-backdrop').hide();
+    });
+
+    $('.info-popup-backdrop').click(function() {
+        $('.outBox').hide();
+        $('.info-popup').hide();
+        $('.info-popup-backdrop').hide();
+    });
+
+    $("#commentForm").mvalidate({
+        type: 1,
+        onKeyup: true,
+        sendForm: false,
+        firstInvalidFocus: false,
+        valid: function(event, options) {
+            
+            // ajax
+            alert('成功提交');
+
+        },
+        descriptions: {
+            comment: {
+                required: 'Please enter your comment!'
+            }
+        }
+    });
+
 });

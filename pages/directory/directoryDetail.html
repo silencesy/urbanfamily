@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../../static/css/bootstrap-select.css">
     <link rel="stylesheet" href="../../static/css/slick.min.css">
     <link rel="stylesheet" href="../../static/css/swiper.min.css">
+    <link rel="stylesheet" href="../../static/css/validate.css">
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_914626_pukjsrimhuc.css">
     <link rel="stylesheet" href="../../static/css/style.css">
 
@@ -129,8 +130,29 @@
                                     <span><i class="iconfont icon-like"></i> 78</span>
                                 </div>
                                 <div class="directoryComment addComment">
-                                    <a href="javascript:;">Add Comment</a>
+                                    <a href="javascript:;" id="addComment">Add Comment</a>
                                 </div>
+                                <!-- 添加评论弹出框开始 -->
+                                <div class="outBox">
+                                    <div class="info-popup">
+                                        <form action="#" class="passwordPhone loginContentBox" id="commentForm">
+                                            <div class="info-popup-inner">
+                                                <h4>Add A Comment</h4>
+                                                <div class="info-popup-input">   
+                                                    <div class="row">
+                                                        <textarea cols="70" rows="10" class="common" name="comment" id="comment" data-required="true" data-descriptions="comment" placeholder="Please comment on"></textarea>
+                                                    </div>
+                                                </div>   
+                                            </div>
+                                            <div class="info-popup-buttons">
+                                                <span class="info-popup-button info-cancel">Cancel</span>
+                                                <button class="info-popup-button info-done">Done</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="info-popup-backdrop"></div>
+                                </div>
+                                <!-- 添加评论弹出框结束 -->
                             </div>
                         </div>
                         <div class="story">
@@ -451,6 +473,7 @@
     <script src="../../static/js/slick.min.js"></script>
     <script src="../../static/js/swiper.min.js"></script>
     <script src="../../static/js/easing.js"></script>
+    <script src="../../static/js/jquery-mvalidate.js"></script>
     <script src="../../js/common.js"></script>
     <script src="../../js/directory.js"></script>
     <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=14b1ac87ce81e76c481b9ca09bfb8ae1"></script>

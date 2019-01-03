@@ -1677,6 +1677,12 @@ img {
     width: 100%;
     height: 100%;
 }
+.eventsDate .col-sm-10 ul {
+    position: relative;
+}
+.eventsDate .col-sm-10 ul .smallDate {
+    top: 6px;
+} 
 .eventsDate .col-sm-10 a {
     display: inline-block;
 }
@@ -1693,6 +1699,9 @@ img {
 }
 .eventsDate .col-sm-10 a.icon-date:hover {
     color: #222;
+}
+.eventsDate .col-sm-10 ul .selectTime a {
+    cursor: pointer;
 }
 .morePageBox.eventsPageBox .orangBg .row .col-sm-8 div span {
     color: #666;
@@ -2557,6 +2566,360 @@ img {
 .userInfo .info > div .password span {
     cursor: pointer;
 }
+
+/*弹出框*/
+.outBox {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+}
+.outBoxN {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+}
+.info-popup {
+    position: absolute;
+    z-index: 10000;
+    top: 50%;
+    left: 50%;
+    display: none;
+    overflow: hidden;
+    width: 20%;
+    -webkit-transition-property: -webkit-transform,opacity;
+    transition-property: transform,opacity;
+    -webkit-transform: translate3d(-50%,-50%,0) scale(1.185);
+    transform: translate3d(-50%,-50%,0) scale(1.185);
+    text-align: center;
+    color: #000;
+    border-radius: 13px;
+}
+.info-popupN {
+    position: absolute;
+    z-index: 10000;
+    top: 50%;
+    left: 50%;
+    display: none;
+    overflow: hidden;
+    width: 20%;
+    -webkit-transition-property: -webkit-transform,opacity;
+    transition-property: transform,opacity;
+    -webkit-transform: translate3d(-50%,-50%,0) scale(1.185);
+    transform: translate3d(-50%,-50%,0) scale(1.185);
+    text-align: center;
+    color: #000;
+    border-radius: 13px;
+}
+
+.info-popup-inner {
+    position: relative;
+    padding: 15px;
+    border-radius: 13px 13px 0 0;
+    background: rgba(255,255,255,.95);
+}
+.info-popup-title {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+.info-popup-input select {
+    width: 98%;
+} 
+.info-popup-input input {
+    font-size: 14px;
+    width: 94%;
+    height: 26px;
+    margin: 15px 0 0;
+    padding: 0 8px;
+}
+.info-popup-inner:after {
+    position: absolute;
+    z-index: 15;
+    top: auto;
+    right: auto;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    content: '';
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    background-color: rgba(0,0,0,.2);
+}
+.info-popup-button:first-child {
+    border-radius: 0 0 0 13px;
+}
+.info-popup-button.mui-popup-button-bold {
+    font-weight: 600;
+}
+.info-popup-button:last-child {
+    border-radius: 0 0 13px;
+}
+.info-popup-buttons {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    height: 44px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.info-popup-button:after {
+    position: absolute;
+    z-index: 15;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: auto;
+    display: block;
+    width: 1px;
+    height: 100%;
+    content: '';
+    -webkit-transform: scaleX(.5);
+    transform: scaleX(.5);
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+    background-color: rgba(0,0,0,.2);
+}
+.info-popup-button {
+    font-size: 17px;
+    line-height: 36px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 100%;
+    height: 36px;
+    padding: 0 5px;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #666;
+    background: rgba(255,255,255,.95);
+    -webkit-box-flex: 1;
+    color: #FF7700;
+}
+.info-popup-backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    -webkit-transition-duration: 400ms;
+    transition-duration: 400ms;
+    background: rgba(0,0,0,.4);
+}
+.info-popup-backdropN {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    -webkit-transition-duration: 400ms;
+    transition-duration: 400ms;
+    background: rgba(0,0,0,.4);
+}
+.userCenterRow {
+    min-height: 397px;  
+}
+/*日历*/
+.pika-single {
+    z-index: 9999;
+    display: block;
+    position: relative;
+    width: 240px;
+    padding: 8px;
+    color: #333;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-bottom-color: #bbb;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.pika-single.is-hidden {
+    display: none;
+}
+.pika-single.is-bound {
+    position: absolute;
+    box-shadow: 0 5px 15px -5px rgba(0,0,0,.5);
+}
+.pika-title {
+    position: relative;
+    text-align: center;
+}
+.pika-label {
+    display: inline-block;
+    *display: inline;
+    position: relative;
+    z-index: 9999;
+    overflow: hidden;
+    margin: 0;
+    padding: 5px 3px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+    background-color: #fff;
+}
+.pika-title select {
+    cursor: pointer;
+    position: absolute;
+    z-index: 9998;
+    margin: 0;
+    left: 0;
+    top: 5px;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+.pika-prev,
+.pika-next {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    border: 0;
+    padding: 0;
+    width: 20px;
+    height: 30px;
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 75% 75%;
+    white-space: nowrap;
+    text-indent: 100%;
+    overflow: hidden;
+    opacity: .5;
+    *position: absolute;
+    *top: 0;
+}
+.pika-prev:hover,
+.pika-next:hover {
+    opacity: 1;
+}
+.pika-prev,
+.is-rtl .pika-next {
+    float: left;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAeCAYAAAAsEj5rAAAAUklEQVR42u3VMQoAIBADQf8Pgj+OD9hG2CtONJB2ymQkKe0HbwAP0xucDiQWARITIDEBEnMgMQ8S8+AqBIl6kKgHiXqQqAeJepBo/z38J/U0uAHlaBkBl9I4GwAAAABJRU5ErkJggg==');
+    *left: 0;
+}
+.pika-next,
+.is-rtl .pika-prev {
+    float: right;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAeCAYAAAAsEj5rAAAAU0lEQVR42u3VOwoAMAgE0dwfAnNjU26bYkBCFGwfiL9VVWoO+BJ4Gf3gtsEKKoFBNTCoCAYVwaAiGNQGMUHMkjGbgjk2mIONuXo0nC8XnCf1JXgArVIZAQh5TKYAAAAASUVORK5CYII=');
+    *right: 0;
+}
+.pika-prev.is-disabled,
+.pika-next.is-disabled {
+    cursor: default;
+    opacity: .2;
+}
+.pika-select {
+    display: inline-block;
+    *display: inline;
+}
+.pika-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 0;
+}
+.pika-table th,
+.pika-table td {
+    width: 14.285714285714286%;
+}
+.pika-table th {
+    color: #999;
+    font-size: 12px;
+    line-height: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.pika-button {
+    cursor: pointer;
+    display: block;
+    outline: none;
+    border: 0;
+    margin: 0;
+    width: 100%;
+    padding: 5px;
+    color: #666;
+    font-size: 12px;
+    line-height: 15px;
+    text-align:center;
+    background: #f5f5f5;
+}
+.is-today .pika-button {
+    color: #FF7700;
+    font-weight: bold;
+}
+.is-selected .pika-button {
+    color: #fff;
+    font-weight: bold;
+    background: #FF7700;
+    box-shadow: inset 0 1px 3px #178fe5;
+    border-radius: 3px;
+}
+.is-disabled .pika-button {
+    pointer-events: none;
+    cursor: default;
+    color: #999;
+    opacity: .3;
+}
+.pika-button:hover {
+    color: #fff !important;
+    background: #FF7700 !important;
+    box-shadow: none !important;
+    border-radius: 3px !important;
+}
+abbr[title] {
+    border-bottom: none;
+}
+
+#commentForm textarea {
+    border: none;
+    padding: 8px;
+}
+#commentForm textarea:focus{
+    border: none;
+    outline: none;
+}
+#commentForm h4 {
+    color: #fff;
+    background: #FF7700;
+    text-align: left;
+    margin: 0;
+    padding: 8px;
+    border-radius: 13px 13px 0 0;
+}
+#commentForm .info-popup-inner {
+    padding: 0;
+}
+#commentForm .info-popup-input {
+    padding: 4px;
+}
+
 
 
 
