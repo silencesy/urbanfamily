@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../../static/css/bootstrap-select.css">
     <link rel="stylesheet" href="../../static/css/slick.min.css">
     <link rel="stylesheet" href="../../static/css/swiper.min.css">
+    <link rel="stylesheet" href="../../static/css/validate.css">
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_914626_le88kqvx0fa.css">
     <link rel="stylesheet" href="../../static/css/style.css">
 
@@ -81,13 +82,13 @@
                             <li><a href="../directory/health.html">HEALTH</a></li>
                         </ul>
                     </li>
-                    <li><a href="../events/events.html">Events</a></li>
+                    <li><a href="../events/events.html" class="homeActive">Events</a></li>
                     <li><a href="../news/news.html">News</a></li>
                     <li><a href="../articles/articles.html">Featured Articles</a></li>
                     <li><a href="../guide/guide.html">Guide</a></li>
                     <li><a href="#">Deals</a></li>
                     <li><a href="#">Store</a></li>
-                    <li><a href="../post/post.html">Classifield</a></li>
+                    <li><a href="../post/post.html">Classifieds</a></li>
                 </ul>
             </div>
         </div>
@@ -720,7 +721,7 @@
                                         </div>
                                         <div>
                                             <span>Username :</span>
-                                            <div class="name">
+                                            <div class="name" id="name">
                                                 <span>
                                                     orange<i class="iconfont icon-bianji"></i>
                                                 </span>
@@ -728,7 +729,7 @@
                                         </div>
                                         <div>
                                             <span>Change Password :</span>
-                                            <div class="password" id="">
+                                            <div class="password" id="reset">
                                                 <span class="noselect">Reset</span>
                                             </div>
                                         </div>
@@ -736,8 +737,51 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- 修改昵称弹出框开始 -->
+                        <div class="outBoxN">
+                            <div class="info-popupN">
+                                <form action="#" class="passwordPhone loginContentBox" id="resetName">
+                                    <div class="info-popup-inner">
+                                        <div class="info-popup-input">   
+                                            <div class="row">
+                                                <input type="text" class="common" name="nickName" id="nickName" data-required="true" data-descriptions="nickName" placeholder="Nickname">
+                                            </div>
+                                        </div>   
+                                    </div>
+                                    <div class="info-popup-buttons">
+                                        <span class="info-popup-button info-cancel">Cancel</span>
+                                        <button class="info-popup-button info-done">Done</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="info-popup-backdropN"></div>
+                        </div>
+                        <!-- 修改昵称弹出框结束 -->
                         <!-- 重置密码弹出框开始 -->
-                        
+                        <div class="outBox">
+                            <div class="info-popup">
+                                <form action="#" class="passwordPhone loginContentBox" id="resetPassword">
+                                    <div class="info-popup-inner">
+                                        <div class="info-popup-input">   
+                                            <div class="row">
+                                                <input type="password" class="common" name="currentPassword" id="currentPassword" data-pattern="^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,16}$" data-required="true" data-descriptions="currentPassword" placeholder="Current Password">
+                                            </div>
+                                            <div class="row">
+                                                <input type="password" class="common" name="newPassword" id="newPassword" data-pattern="^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,16}$" data-required="true"  data-descriptions="newPassword" placeholder="New Password">
+                                            </div>
+                                            <div class="row">
+                                                <input type="password" class="common" name="newPasswordAgain" id="newPasswordAgain" data-pattern="^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,16}$" data-required="true"  data-descriptions="newPasswordAgain" placeholder="New Password">
+                                            </div>
+                                        </div>   
+                                    </div>
+                                    <div class="info-popup-buttons">
+                                        <span class="info-popup-button info-cancel">Cancel</span>
+                                        <button class="info-popup-button info-done">Done</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="info-popup-backdrop"></div>
+                        </div>
                         <!-- 重置密码弹出框结束 -->
                     </div>
                 </div>
@@ -777,6 +821,7 @@
     <script src="../../static/js/slick.min.js"></script>
     <script src="../../static/js/swiper.min.js"></script>
     <script src="../../static/js/easing.js"></script>
+    <script src="../../static/js/jquery-mvalidate.js"></script>
     <script src="../../js/common.js"></script>
     <script src="../../js/userCenter.js"></script>
 </body>

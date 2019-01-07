@@ -321,8 +321,14 @@ a:focus {
     width: 100%;
     height: 100%;
     padding: 10px 0;
+    text-align: center;
 }
 .navBorder .navUl > li > a:hover, .navBorder .navUl > li > a:active {
+    color: #FF7700;
+    border-bottom: 2px solid #FF7700;
+    margin-bottom: -2px;
+}
+.navBorder .navUl li a.homeActive {
     color: #FF7700;
     border-bottom: 2px solid #FF7700;
     margin-bottom: -2px;
@@ -537,6 +543,7 @@ a:focus {
     -webkit-box-orient: vertical;
     padding: 5px 12px;
     height: 29px;
+    width: 100%;
 }
 .swiper-pagination-bullet-active {
     background: #FF7700;
@@ -1278,6 +1285,13 @@ a:focus {
     overflow: hidden;
     height: 272px;
 }
+.directoryBox .scroll {
+    overflow: hidden;
+    height: 272px;
+}
+.directoryBox .scroll > .scrollDiv {
+    width: 100%;
+}
 .zUIpanelScrollBox,.zUIpanelScrollBar{
     width: 10px;
     top: 4px;
@@ -1523,13 +1537,15 @@ img {
 }
 .breadcrumb > li {
     display: inline-block;
-    color: #FF7700;
+    color: #666;
+    font-size: 14px;
 }
-.breadcrumb > li a {
-    color: #FF7700;   
+.breadcrumb > li a { 
+    color: #666;
+    font-size: 14px;  
 }
-.breadcrumb>li+li:before {
-    color: #FF7700;   
+.breadcrumb>li+li:before {  
+    color: #666; 
 }
 .whiteBgDetail .row {
     position: relative;
@@ -2595,7 +2611,7 @@ img {
     left: 50%;
     display: none;
     overflow: hidden;
-    width: 20%;
+    width: 16%;
     -webkit-transition-property: -webkit-transform,opacity;
     transition-property: transform,opacity;
     -webkit-transform: translate3d(-50%,-50%,0) scale(1.185);
@@ -2611,7 +2627,7 @@ img {
     left: 50%;
     display: none;
     overflow: hidden;
-    width: 20%;
+    width: 16%;
     -webkit-transition-property: -webkit-transform,opacity;
     transition-property: transform,opacity;
     -webkit-transform: translate3d(-50%,-50%,0) scale(1.185);
@@ -2620,7 +2636,9 @@ img {
     color: #000;
     border-radius: 13px;
 }
-
+.pagination>.active>span {
+    z-index: 0;
+}
 .info-popup-inner {
     position: relative;
     padding: 15px;
@@ -2919,6 +2937,134 @@ abbr[title] {
 #commentForm .info-popup-input {
     padding: 4px;
 }
+
+/*--- 表单 ---*/
+.formRow {
+    background: #fff;
+    padding: 16px;
+}
+.formRow .submitBtn {
+    width: 85%;
+    text-align: center;
+}
+.formRow .submitBtn .btn {
+    width: 180px;
+    height: 40px;
+    text-align: center;
+}
+.formRow .row i {
+    color: #FF7700;
+}
+.formRow .row label {
+    font-size: 14px;
+    color: #222;
+    font-weight: 500;
+}
+.formRow .row input {
+    border: 1px solid #dfdfdf;
+    padding-left: 6px;
+}
+textarea:focus {
+    outline: none;
+}
+.formRow h3 {
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #dfdfdf;
+    margin-bottom: 20px;
+}
+.formRow form {
+    padding-left: 10%;
+}
+.formRow .row {
+    margin-bottom: 24px;
+}
+.formRow .row label {
+    float: left;
+    width: 15%;
+    height: 30px;
+    line-height: 30px;
+}
+.formRow .row input {
+    float: left;
+    width: 53%;
+    height: 30px;
+}
+.formRow .row .photosBox {
+    float: left;
+    width: 85%;
+}
+.formRow .row .photosBtn {
+    display: inline-block;
+    text-align: center;
+    width: 128px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #dfdfdf;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.formRow .row .photosBox p {
+    color: #666;
+    font-size: 14px;
+    padding-top: 18px;
+    margin-bottom: 16px;
+}
+.formRow .row textarea {
+    color: #666;
+    font-size: 14px;
+    width: 53%;
+    height: 154px;
+    border: 1px solid #dfdfdf;
+    padding: 10px;
+    margin-bottom: 14px;
+}
+.formRow .smallP {
+    font-size: 14px;
+    color: #666;
+    padding: 14px 0 24px 0;
+}
+.formRow .row .selectBox {
+    float: left;
+    width: 30%;
+}
+.formRow .row .selectBox label {
+    width: 37%;
+}
+.formRow .row .selectBox .selectpicker {
+    width: 50%;
+}
+.formRow .row .selectBox.selectType {
+    float: left;
+    width: 40%;
+}
+.formRow .row .selectBox.selectCity label {
+    width: 30%;
+}
+.formRow .row .selectBox .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 51%;
+}
+.formRow .row .selectBox.selectCity .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 64%;
+}
+.formRow .bootstrap-select .dropdown-toggle:focus {
+    outline: none !important;
+    background: #fff;
+    border: 1px solid #dfdfdf;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
