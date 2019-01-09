@@ -98,31 +98,17 @@
             <ul class="breadcrumb">
                 <li><a href="../homePage.html"><span>Home</span></a></li> 
                 <li><a href="../userCenter/userCenter.html"><span>User Center</span></a></li>          
-                <li>Add Classified Post</li>
+                <li>Post A Job</li>
             </ul>
         </div>
         <!-- 面包屑导航栏结束 -->
         
         <div class="container userCenterContainer">
             <div class="row formRow">
-                <h3>Add Classified Post</h3>
+                <h3>Post A Job</h3>
                 <form action="" id="addPost">
                     <div class="row">
-                        <label><i>*</i>Title :</label>
-                        <input type="text" class="common" name="title" id="title" data-required="true" data-descriptions="title">
-                    </div>
-                    <div class="row">
                         <div class="selectBox selectLeft">
-                            <label><i>*</i>Type :</label>
-                            <select class="selectpicker">
-                                <option>Employment</option>
-                                <option>Sale-Wanted</option>
-                                <option>Services</option>
-                                <option>Personals</option>
-                                <option>Housing</option>
-                            </select>
-                        </div>
-                        <div class="selectBox selectRight">
                             <label><i>*</i>City :</label>
                             <select class="selectpicker">
                                 <option>Shanghai</option>
@@ -135,15 +121,87 @@
                         </div>
                     </div>
                     <div class="row">
-                        <label><i>*</i>Upload Photos :</label>
-                        <div class="photosBox"> 
-                            <a class="photosBtn">Upload Photos</a>
-                            <p>Maximum 8 photos with PNG/JPG/jpeg format (recommended size: 1024*768px)</p>
+                        <div class="selectBox selectLeft">
+                            <label><i>*</i>Job Type :</label>
+                            <select class="selectpicker">
+                                <option>Fulltime</option>
+                                <option>Freelance / Project</option>
+                                <option>Internship / Parttime</option>
+                            </select>
                         </div>
                     </div>
                     <div class="row">
-                        <label><i>*</i>Description :</label>
-                        <textarea class="common" name="description" id="description" data-required="true" data-pattern="^(.|\n){0,1000}$" data-descriptions="description" placeholder="Maximum 1000 characters"></textarea>
+                        <label><i>*</i>Job Title :</label>
+                        <input type="text" class="common" name="title" id="title" data-required="true" data-descriptions="title" placeholder='e.g. "Executive Sales Manager"'>
+                    </div>
+                    <div class="row">
+                        <div class="selectBox selectLeft">
+                            <label><i>*</i>Seniority :</label>
+                            <select class="selectpicker">
+                                <option>Unspecified</option>
+                                <option>No Prior Experience Required</option>
+                                <option>Junior</option>
+                                <option>Senior</option>
+                                <option>Executive</option>
+                            </select>
+                        </div>
+                        <div class="selectBox selectRight">
+                            <label><i>*</i>Category :</label>                     
+                            <select class="selectpicker">
+                                <option>Accounting</option>
+                                <option>Admin</option>
+                                <option>Advertising </option>
+                                <option>Arch / Interior design</option>
+                                <option>Arts / Design / Music</option>
+                                <option>Banking & Finance</option>
+                                <option>Business / Management</option>
+                                <option>Charity / Foundation</option>
+                                <option>Consulting</option>
+                                <option>Customer Service</option>
+                                <option>Education</option>
+                                <option>Engineering</option>
+                                <option>Fitness & Beauty</option>
+                                <option>Healthcare</option>
+                                <option>Hospitality / F&B</option>
+                                <option>HR & Recruitment</option>
+                                <option>IT & Web</option>
+                                <option>Law / Legal</option>
+                                <option>Logistics</option>
+                                <option>Manufacturing</option>
+                                <option>Media / PR / Events</option>
+                                <option>Photography / TV / Film / Video</option>
+                                <option>Purchasing</option>
+                                <option>Real Estate</option>
+                                <option>Retail</option>
+                                <option>Sales & Marketing</option>
+                                <option>Science</option>
+                                <option>Translating / Language</option>
+                                <option>Writing / Editing</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label><i>*</i>Company Name :</label>
+                        <input type="text" class="common" name="companyName" id="companyName" data-required="true" data-descriptions="companyName">
+                    </div>
+                    <div class="row">
+                        <label><i>*</i>Company Website :</label>
+                        <input type="text" class="common" name="website" id="website" data-required="true" data-descriptions="website" data-pattern="(https?|ftp|file)://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]">
+                    </div>
+                    <div class="row">
+                        <label><i>*</i>Company Logo :</label>
+                        <div class="photosBox"> 
+                            <a class="photosBtn">Upload Logo</a>
+                            <p>*Recommended size: 200x100 pixel with JPG/PNG format</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label><i>*</i>Job Description :</label>
+                        <textarea class="common" name="description" id="description" data-required="true" data-pattern="^(.|\n){0,1000}$" data-descriptions="description" placeholder="Provide a job description detailing the tasks and responsibilities that go with the position.(Maximum 1000 characters)"></textarea>
+                    </div>
+                    <div class="row">
+                        <label><i>*</i>Position Requirements:</label>
+                        <textarea class="common" name="position" id="position" data-required="true" data-pattern="^(.|\n){0,1000}$" data-descriptions="position" placeholder="Use this field to list qualifications required in order for the employee to fulfill the duties and responsibilities of the position.(Maximum 1000 characters)"></textarea>
                     </div>
                     <p>Your Contact Information:</p>
                     <p class="smallP">Please fill in your contact details below. All fields are required. Submissions leaving any of these fields blank will be rejected.</p>
@@ -201,6 +259,6 @@
     <script src="../../static/js/easing.js"></script>
     <script src="../../static/js/jquery-mvalidate.js"></script>
     <script src="../../js/common.js"></script>
-    <script src="../../js/addPost.js"></script>
+    <script src="../../js/postJob.js"></script>
 </body>
 </html>

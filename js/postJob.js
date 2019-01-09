@@ -12,12 +12,26 @@ $(function(){
 
         },
         descriptions: {
+            // city: {
+            //     required: 'Please enter your city!'
+            // },
             title: {
-                required: 'Please enter title!'
+                required: 'Please enter job title!'
+            },
+            companyName: {
+                required: 'Please enter company name!'
+            },
+            website: {
+                required: 'Please enter company website!',
+                pattern: 'Please enter a valid company website!'
             },
             description: {
-                required: 'Please enter description!',
-                pattern: 'Description(Maximum 1000 characters)!'
+                required: 'Please enter job description!',
+                pattern: 'Job Description(Maximum 1000 characters)!'
+            },
+            position: {
+                required: 'Please enter position requirements!',
+                pattern: ' Position Requirements(Maximum 1000 characters)!'
             },
             name: {
                 required: 'Please enter your name!'

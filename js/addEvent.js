@@ -13,11 +13,31 @@ $(function(){
         },
         descriptions: {
             title: {
-                required: 'Please enter title!'
+                required: 'Please enter job title!'
             },
+            eventName: {
+                required: 'Please enter event name!'
+            },
+            where: {
+                required: 'Please enter venue!'
+            },
+            startDate: {
+                required: 'Please enter start date!'
+            },
+            contactEmail: {
+                // required: 'Please enter contact email!',
+                pattern: 'Please enter a valid contact email!'
+            },
+            website: {
+                // required: 'Please enter your company website!',
+                pattern: 'Please enter a valid company website!'
+            },
+            // startDate: {
+            //     required: 'Please enter start time!'
+            // },
             description: {
                 required: 'Please enter description!',
-                pattern: 'Description(Maximum 1000 characters)!'
+                pattern: 'Job Description(Maximum 1000 characters)!'
             },
             name: {
                 required: 'Please enter your name!'

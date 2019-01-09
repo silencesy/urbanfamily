@@ -98,31 +98,17 @@
             <ul class="breadcrumb">
                 <li><a href="../homePage.html"><span>Home</span></a></li> 
                 <li><a href="../userCenter/userCenter.html"><span>User Center</span></a></li>          
-                <li>Add Classified Post</li>
+                <li>Post A Job</li>
             </ul>
         </div>
         <!-- 面包屑导航栏结束 -->
         
         <div class="container userCenterContainer">
             <div class="row formRow">
-                <h3>Add Classified Post</h3>
+                <h3>Post A Job</h3>
                 <form action="" id="addPost">
                     <div class="row">
-                        <label><i>*</i>Title :</label>
-                        <input type="text" class="common" name="title" id="title" data-required="true" data-descriptions="title">
-                    </div>
-                    <div class="row">
                         <div class="selectBox selectLeft">
-                            <label><i>*</i>Type :</label>
-                            <select class="selectpicker">
-                                <option>Employment</option>
-                                <option>Sale-Wanted</option>
-                                <option>Services</option>
-                                <option>Personals</option>
-                                <option>Housing</option>
-                            </select>
-                        </div>
-                        <div class="selectBox selectRight">
                             <label><i>*</i>City :</label>
                             <select class="selectpicker">
                                 <option>Shanghai</option>
@@ -133,6 +119,77 @@
                                 <option>Suzhou</option>
                             </select>
                         </div>
+                    </div>
+                    <div class="row">
+                        <label><i>*</i>Event Name :</label>
+                        <input type="text" class="common" name="eventName" id="eventName" data-required="true" data-descriptions="eventName">
+                    </div>
+                    <div class="row">
+                        <label><i>*</i>Venue/where :</label>
+                        <input type="text" class="common" name="where" id="where" data-required="true" data-descriptions="where">
+                    </div>
+                    <div class="row">
+                        <div class="selectBox selectLeft">
+                            <label><i>*</i>Channel :</label>
+                            <select class="selectpicker">
+                                <option>Shanghai</option>
+                                <option>Beijing</option>
+                                <option>Shenzhen</option>
+                                <option>Guangzhou</option>
+                                <option>Tianjin</option>
+                                <option>Suzhou</option>
+                            </select>
+                        </div>
+                        <div class="selectBox selectRight">
+                            <label><i>*</i>Category :</label>                     
+                            <select class="selectpicker">
+                                <option>Select Category</option>
+                                <option>Arts</option>
+                                <option>Nightlife & Live Music</option>
+                                <option>Eat & Drink</option>
+                                <option>Community</option>
+                                <option>Sports</option>
+                                <option>Family</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="selectBox selectLeft">
+                            <label><i>*</i>Type of Event :</label>
+                            <select class="selectpicker">
+                                <option>Eat & Drink</option>
+                                <option>Arts</option>
+                                <option>Nightlife</option>
+                                <option>Community</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="selectBox selectLeft">
+                            <label><i>*</i>Which Days :</label>
+                            <select class="selectpicker">
+                                <option>One Day</option>
+                                <option>Every Month</option>
+                                <option>Every Week</option>
+                                <option>Every Day</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label><i>*</i>Start Date :</label>
+                        <input type="text" class="common" name="startDate" id="startDate" data-required="true" data-descriptions="startDate">
+                    </div>
+                    <div class="row may">
+                        <label>Contact Email :</label>
+                        <input type="text" class="common" name="contactEmail" id="contactEmail" data-descriptions="contactEmail" data-pattern="^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$">
+                    </div>
+                    <div class="row may">
+                        <label>Website :</label>
+                        <input type="text" class="common" name="website" id="website" data-descriptions="website" data-pattern="(https?|ftp|file)://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]">
+                    </div>
+                    <div class="row may">
+                        <label>Start Time :</label>
+                        <input type="text" class="common" name="startTime" id="startTime" data-descriptions="startTime">
                     </div>
                     <div class="row">
                         <label><i>*</i>Upload Photos :</label>
@@ -201,6 +258,6 @@
     <script src="../../static/js/easing.js"></script>
     <script src="../../static/js/jquery-mvalidate.js"></script>
     <script src="../../js/common.js"></script>
-    <script src="../../js/addPost.js"></script>
+    <script src="../../js/addEvent.js"></script>
 </body>
 </html>
