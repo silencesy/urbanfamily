@@ -1,7 +1,7 @@
 $(function(){
     // 轮播
     var directorySwiper = new Swiper('.directorySwiper', {
-      slidesPerView: 4,
+      slidesPerView: 4.5,
       spaceBetween: 30,
       autoplay: true,
       pagination: {

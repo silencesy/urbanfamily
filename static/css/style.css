@@ -314,7 +314,7 @@ a:focus {
     float: left;
     width: 8%;
     text-align: center;
-    margin-right: 4.27%;
+    margin-right: 4.13%;
 }
 .navBorder .navUl > li > a {
     display: inline-block;
@@ -322,6 +322,7 @@ a:focus {
     height: 100%;
     padding: 10px 0;
     text-align: center;
+    font-weight: 700;
 }
 .navBorder .navUl > li > a:hover, .navBorder .navUl > li > a:active {
     color: #FF7700;
@@ -338,7 +339,7 @@ a:focus {
 }   
 .navBorder .navUl > li:last-child {
     text-align: right;
-    width: 7%;
+    width: 8%;
     margin-right: 0;
 }
 .navBorder .navUl > li:nth-child(2) {
@@ -1158,7 +1159,7 @@ a:focus {
 }
 .directorySwiper .swiper-slide img {
     width: 100%;
-    height: 170px;
+    height: 140px;
 }
 
 .directorySwiperBox {
@@ -1189,6 +1190,7 @@ a:focus {
     display: inline-block;
     width: 100%;
     position: relative;
+    width: 100%;
 }
 .directorySwiper .swiper-slide a span {
     position: absolute;
@@ -1875,6 +1877,9 @@ img {
     padding-bottom: 24px;
     border-bottom: 1px solid #eee;
 }
+.postContact .postText a {
+    color: #FF7700;
+}
 .postContact .postBtn a {
     font-size: 14px;
     color: #666;
@@ -2247,15 +2252,16 @@ img {
     padding: 30px 16px 16px;
 }
 .userCenterBox .userCenterP {
-    line-height: 30px;
     color: #666;
     font-size: 14px;
     margin-left: 16px;
 }
 .userCenterBox .userCenterP.userCenterPF {
     margin-top: 12px;
-    padding-left: 10px;
-    text-indent: -21px;
+}
+.userCenterBox .userCenterT {
+    color: #666;
+    font-weight: 700;
 }
 .userCenterBox .title {
     overflow: hidden;
@@ -2264,6 +2270,7 @@ img {
 .userCenterBox .title > span {
     float: left;
     padding-bottom: 12px;
+    font-weight: 700;
 }
 .userCenterBox .title > div {
     float: right;
@@ -2515,14 +2522,29 @@ img {
 .userInfo .info > div {
     margin-bottom: 30px;
     overflow: hidden;
+    line-height: 30px;
 }
 .userInfo .info > div > span {
     float: left;
     width: 19%;
     display: inline-block;
 }
+.userInfo .info > div.companyInfo > span {
+    width: 21%;
+}
+.userInfo .info > div.jobsInfo > span {
+    width: 31%;
+}
+.userInfo .info > div.companyInfo a ,.userInfo .info > div.jobsInfo a {
+    border: 1px solid #dfdfdf;
+    border-radius: 4px;
+    color: #666;
+}
+.userInfo .info > div.jobsInfo a {
+    color: #FF7700;
+}
 .userInfo .info > div:first-child > span {
-    margin-top: 35px;
+    margin-top: 30px;
 }
 .userInfo .info > div > div {
     float: left;
@@ -2568,7 +2590,6 @@ img {
 .userInfo .info > div > .password {
     display: inline-block;
     border: 1px solid #dfdfdf;
-    width: 100px;
     text-align: center;
     height: 30px;
     line-height: 30px;
@@ -2576,7 +2597,7 @@ img {
 }
 .noselect {
     display: inline-block;
-    width: 100px;
+    padding: 0 28px;
     height: 30px;
 }
 .userInfo .info > div .password span {
