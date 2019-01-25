@@ -12,39 +12,40 @@ $(function(){
 
         },
         descriptions: {
-            // city: {
-            //     required: 'Please enter your city!'
-            // },
-            title: {
-                required: 'Please enter job title!'
+            position: {
+                required: 'Please enter position!'
             },
             companyName: {
                 required: 'Please enter company name!'
             },
-            website: {
-                required: 'Please enter company website!',
-                pattern: 'Please enter a valid company website!'
-            },
             description: {
-                required: 'Please enter job description!',
-                pattern: 'Job Description(Maximum 1000 characters)!'
+                required: 'Please enter description!',
+                pattern: 'Description(Maximum 1000 characters)!'
             },
-            position: {
-                required: 'Please enter position requirements!',
-                pattern: ' Position Requirements(Maximum 1000 characters)!'
-            },
-            name: {
-                required: 'Please enter your name!'
-            },
-            email: {
-                required: 'Please enter your email!',
-                pattern: 'Please enter a valid email address!'
-            },
-            phone: {
-                required: 'Please enter your phone number!',
-                pattern: 'Please enter a 11-digit valid phone number!'
+            requirements: {
+                required: 'Please enter requirements!',
+                pattern: ' Requirements(Maximum 1000 characters)!'
             }
         }
+    });
+
+    // jobs提交弹框
+    $('#jobSubmit').click(function() {
+        $('.outBoxJ').show();
+        $('.info-popupJ').show();
+        $('.info-popup-backdropJ').show();
+    });
+    
+    $('.info-cancel').click(function() {
+        $('.outBoxJ').hide();
+        $('.info-popupJ').hide();
+        $('.info-popup-backdropJ').hide();
+    });
+
+    $('.info-popup-backdropJ').click(function() {
+        $('.outBoxJ').hide();
+        $('.info-popupJ').hide();
+        $('.info-popup-backdropJ').hide();
     });
 
 });

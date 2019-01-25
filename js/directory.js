@@ -8,6 +8,10 @@ $(function(){
         el: '.swiper-pagination',
         clickable: true,
       },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
     });
 
     var swiperSchool = new Swiper('.swiper-school', {
@@ -19,7 +23,7 @@ $(function(){
     });
 
     // 添加评论弹出框
-    $('#addComment').click(function() {
+    $('.addComment').click(function() {
         $('.outBox').show();
         $('.info-popup').show();
         $('.info-popup-backdrop').show();

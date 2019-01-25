@@ -19,15 +19,17 @@ $(function(){
 
  	// Cities tab切换
 	$(".citiesTab a").off("click").on("click",function(){
-       var index = $(this).index();
-       $(this).addClass("citiesBtn").siblings().removeClass("citiesBtn");
-       $(".citiesContent .content").eq(index).addClass("citiesActive").siblings().removeClass("citiesActive");
+        var index = $(this).index();
+       	$(this).addClass("citiesBtn").siblings().removeClass("citiesBtn");
+    	$(".citiesContent .content").eq(index).addClass("citiesActive").siblings().removeClass("citiesActive");
+        if($("#ng_sele").val() == 'news'){
+			$("#ng_sele").val("guide");
+	   	}else{
+			$("#ng_sele").val("news");
+	   	}
  	});
-   	if($("#ng_sele").val() == 'news'){
-		$("#ng_sele").val("guide");
-   	}else{
-		$("#ng_sele").val("news");
-   	}
+
+
   	var swiperSchool = new Swiper('.feaSchool', {
 	    slidesPerView: 3,
 	    slidesPerColumn: 2,

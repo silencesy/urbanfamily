@@ -98,95 +98,52 @@
             <ul class="breadcrumb">
                 <li><a href="../homePage.html"><span>Home</span></a></li> 
                 <li><a href="../userCenter/userCenter.html"><span>User Center</span></a></li>          
-                <li>Post A Job</li>
+                <li><a href="#"><span>Personal info</span></a></li>
+                <li><a href="#"><span>Company Info</span></a></li>
+                <li>Buy Credit</li>
             </ul>
         </div>
         <!-- 面包屑导航栏结束 -->
         
         <div class="container userCenterContainer">
-            <div class="row formRow">
-                <h3>Post A Job</h3>
-                <form action="" id="addPost">
-                    <div class="row">
-                        <div class="selectBox selectLeft">
-                            <label><i>*</i>City :</label>
-                            <select class="selectpicker">
-                                <option>Shanghai</option>
-                                <option>Beijing</option>
-                                <option>Shenzhen</option>
-                                <option>Guangzhou</option>
-                                <option>Tianjin</option>
-                                <option>Suzhou</option>
-                            </select>
+            <div class="row formRow rowCredit">
+                <h3>Buy Credit</h3>
+                <!-- jobs收费标准开始 -->
+                <div class="jobCost">
+                    <div class="content">
+                        <div class="list">
+                            <div>
+                                <p>Buy <i>1 Job</i></p>
+                                <p>Listing Credit</p>
+                                <span>500 RMB</span>
+                            </div>
+                            <div>
+                                <a href="#">Select</a>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div>
+                                <p>Buy <i>5 Jobs</i></p>
+                                <p>Listing Credit</p>
+                                <span>2200 RMB</span>
+                            </div>
+                            <div>
+                                <a href="#">Select</a>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div>
+                                <p>Buy <i>10 Jobs</i></p>
+                                <p>Listing Credit</p>
+                                <span>4000 RMB</span>
+                            </div>
+                            <div>
+                                <a href="#">Select</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <label><i>*</i>Position :</label>
-                        <input type="text" class="common" name="position" id="position" data-required="true" data-descriptions="position">
-                    </div>
-                    <div class="row">
-                        <div class="selectBox selectLeft">
-                            <label><i>*</i>Industry :</label>
-                            <select class="selectpicker">
-                                <option value="">Accounting</option>
-                                <option value="">Admin</option>
-                                <option value="">Advertising</option>
-                                <option value="">Arch / Interior design</option>
-                                <option value="">Arts / Design / Music</option>
-                                <option value="">Banking & Finance</option>
-                                <option value="">Business / Management</option>
-                                <option value="">Charity / Foundation</option>
-                                <option value="">Consulting</option>
-                                <option value="">Customer Service</option>
-                                <option value="">Education</option>
-                                <option value="">Engineering</option>
-                                <option value="">Fitness & Beauty</option>
-                                <option value="">Healthcare</option>
-                                <option value="">Hospitality / F&B</option>
-                                <option value="">HR & Recruitment</option>
-                                <option value="">IT & Web</option>
-                                <option value="">Law / Legal</option>
-                                <option value="">Logistics</option>
-                                <option value="">Manufacturing</option>
-                                <option value="">Media / PR / Events</option>
-                                <option value="">Photography / TV / Film / Video</option>
-                                <option value="">Purchasing</option>
-                                <option value="">Real Estate</option>
-                                <option value="">Retail</option>
-                                <option value="">Sales & Marketing</option>
-                                <option value="">Science</option>
-                                <option value="">Translating / Language</option>
-                                <option value="">Writing / Editing</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="selectBox selectLeft">
-                            <label><i>*</i>Employment Type :</label>
-                            <select class="selectpicker">
-                                <option>Fulltime</option>
-                                <option>Parttime</option>
-                                <option>Freelance</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <label><i>*</i>Company Name :</label>
-                        <input type="text" class="common" name="companyName" id="companyName" data-required="true" data-descriptions="companyName">
-                    </div>
-                    <div class="row">
-                        <label><i>*</i>Description :</label>
-                        <textarea class="common" name="description" id="description" data-required="true" data-pattern="^(.|\n){0,1000}$" data-descriptions="description" placeholder=" Provide a job description detailing the tasks and responsibilities that go with the position. (Maximum 1000 characters)"></textarea>
-                    </div>
-                    <div class="row">
-                        <label><i>*</i>Requirements:</label>
-                        <textarea class="common" name="requirements" id="requirements" data-required="true" data-pattern="^(.|\n){0,1000}$" data-descriptions="requirements" placeholder="Use this field to list qualifications required in order for the employee to fulfill the duties and responsibilities of the position.(Maximum 1000 characters)"></textarea>
-                    </div>
-                    <div class="submitBtn">
-                        <button class="btn">Submit</button>
-                    </div>
-                </form>
-                <button id="jobSubmit">点击 这里是一个 test 弹框</button>
+                </div>
+                <!-- jobs收费标准结束 -->
             </div>
         </div>
 
@@ -214,22 +171,6 @@
             </div>
         </div>
         <!-- 底部结束 -->
-        <!-- jobs提交弹框开始 -->
-        <div class="outBoxJ">
-            <div class="info-popupJ">  
-                <div class="info-popup-innerJ">
-                    <p>You have 3 job credits remaining.</p>
-                    <p>Would you like to continue submitting this job listing?</p>
-                    <div class="info-popup-buttonsJ">
-                        <button class="info-popup-buttonJ info-cancel">Cancel</button>
-                        <button class="info-popup-buttonJ info-done">Done</button>
-                    </div>
-                </div>
-                </div>
-                <div class="info-popup-backdropJ"></div>
-            </div>
-        </div>
-        <!-- jobs提交弹框结束 -->
     </div>
 
     <script src="../../static/js/jquery.min.js"></script>
@@ -241,6 +182,6 @@
     <script src="../../static/js/easing.js"></script>
     <script src="../../static/js/jquery-mvalidate.js"></script>
     <script src="../../js/common.js"></script>
-    <script src="../../js/postJob.js"></script>
+    <script src="../../js/companyInfo.js"></script>
 </body>
 </html>
