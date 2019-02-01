@@ -3826,10 +3826,26 @@ textarea:focus {
     .userInfo .info > div > span {
         width: 38%;
     }  
-
-
-
-
+    .userCenterBox .content .listPer > a div:first-child {
+        width: 50%;
+    }
+    .userCenterBox .content .listPer > a div:nth-child(2) {
+        width: 100%;
+        padding-left: 0;
+    }
+    .userCenterBox .content .listPer > a div:nth-child(2) p {
+        padding-top: 8px;
+    }
+    .userCenterBox .content .listPer > a.listPerComment div:first-child img {
+         height: 67px; 
+         padding-right: 8px;
+    }
+    .userCenterBox .orderTitle span:first-child {
+        width: 25%;
+    }    
+    .userCenterBox .content .listPer > a {
+        width: 100%;
+    }
 
 
 }
