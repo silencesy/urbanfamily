@@ -3103,6 +3103,7 @@ textarea:focus {
 }
 .formRow .row .selectBox .selectpicker {
     width: 50%;
+    z-index: -1;
 }
 .formRow .row .selectBox.selectLeft {
     float: left;
@@ -3729,6 +3730,104 @@ textarea:focus {
     .schoolPhoto .swiper-container.postSwiper {
         padding-bottom: 9px;
     }
+    .formRow form {
+        padding-left: 0;
+    }
+    .formRow .row .selectBox.selectLeft {
+        width: 100%;
+    }
+    .formRow .row label {
+        width: 40%;
+    }
+    .formRow .row input {
+        width: 60%;
+    }
+    .formRow .row .selectBox label {
+        width: 40%;
+    } 
+    .formRow .row .selectBox .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+        width: 60%;
+    }
+    .formRow .row .selectBox.selectRight {
+        width: 100%;
+    }
+    .formRow .row .selectBox.selectRight label {
+        width: 40%;
+    }
+    .formRow .row .selectBox.selectRight .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+        width: 60%;
+    } 
+    .formRow .row.selectTwo .selectBox.selectLeft {
+        margin-bottom: 24px;
+    }
+    .formRow .submitBtn {
+        width: 100%;
+    }
+    .formRow .row .photosBox {
+        float: left;
+        width: 50%;
+    }
+    .userCenterContainer .col-sm-2 {
+        width: 100%;
+        padding: 0;
+    }
+    .userNav a {
+        width: 32%;
+    }
+    .userNav a.activeNav {
+        border-left: 0;
+    }
+    .userNav {
+        padding: 10px 0;
+    }
+    .userCenterRow .row:first-child .col-sm-6:first-child {
+        border: none;
+    }
+    .userCenterRow .row:nth-child(2) .col-sm-6:nth-child(2) {
+        border: none;
+    }
+    .userCenterContainer .col-sm-10 {
+        width: 100%;
+    }
+    .userCenterBox .title > span {
+        display: block;
+        width: 100%;
+        float: inherit;
+    }
+    .userCenterBox .title > div {
+        float: inherit;
+    }
+    .userCenterBox .title > div > a {
+        margin-left: 0;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .userCenterBox.listingMark .title > div > a {
+        width: 24%;
+    }
+    .userCenterBox.postmark .title > div > a {
+        width: 24%;
+    }
+    .userCenterBox.postmark .title > div > a:first-child {
+        width: 12%; 
+    }
+    .userCenterBox.postmark .title > div > a:nth-child(2) {
+        width: 10%; 
+    }
+    .userCenterBox.commentsMark .title > div > a {
+        width: 32%;
+    }
+    .userCenterBox .content .listPer > a.listPerComment div:first-child {
+        width: 25%;
+    }
+    .userCenterBox .content .listPer > a.listPerComment div:nth-child(2) {
+        width: 74%;
+    }
+    .userInfo .info > div > span {
+        width: 38%;
+    }  
+
+
 
 
 
